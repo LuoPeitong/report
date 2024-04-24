@@ -11,6 +11,10 @@ import java.util.Map;
 public class ObjectUtil {
     private static Map<Class<?>, Map<String, Field>> fieldCache = new HashMap<>();
 
+    /*
+     * 判断类中是否含有空的属性
+     * author: Feng Qingyu
+     */
     public static Result haveEmpty(Object object) {
         // 获取对象的 Class 属性
         Class<?> objectClass = object.getClass();
